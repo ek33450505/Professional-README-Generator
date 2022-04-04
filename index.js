@@ -1,6 +1,7 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
-// const fs = require('fs');
+// const fs = require('fs'); // keep commented out until you write the fs functions
+// const generateMarkdown = require('./src/generateMarkdown.js')
 
 // Create an array of questions for user input
 const questions = () => {
@@ -57,16 +58,16 @@ const questions = () => {
         },
         {
             type: 'checkbox',
-            name: 'licensing',
+            name: 'license',
             message: 'Which lisences are attached to this project? (Check all that apply)',
             choices: ['Apache License 2.0', 'GNU General Public License', 'Boost Software License 1.0', 'Eclipse Public License', 'The Unlicense']
         },
         {
             type: 'input',
-            name: 'contribution',
+            name: 'contributing',
             message: 'Please explain how someone can contribute to this project? (Required)',
-            validate: contributionInput => {
-                if (contributionInput) {
+            validate: contributingInput => {
+                if (contributingInput) {
                     return true;
                 } else {
                     console.log('You must explain how someone can contribute to this porject!')
@@ -75,10 +76,10 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: "testing",
+            name: "tests",
             message: 'Explain how someone can test this application on their own. (Required)',
-            validate: testingInput => {
-                if (testingInput) {
+            validate: testsInput => {
+                if (testsInput) {
                     return true;
                 } else {
                     console.log('You must explain how to test this application!')
@@ -117,9 +118,9 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'Additional Questions',
+            name: 'questions',
             message: 'Please provide additional information on how to reach you with additional questions:',
-            when: ({ confirmAdditionalQuestions}) => {
+            when: ({ confirmAdditionalQuestions }) => {
                 if (confirmAdditionalQuestions) {
                     return true;
                 } else {
@@ -129,14 +130,25 @@ const questions = () => {
         }
     ]);
 };
-questions()
 
+questions();
+// function writeToFile(fileName, data) {
+//     FileSystem. writeFile(fileName, data, (err) => {
+//         if (err)
+//         throw err;
+//         console.log('You have sucessfully created a new README.md file!')
+//     });
+// };
 
-// // TODO: Create a function to initialize app
-// function init() {}
+// //  A function to initialize app
+// function init() {
+//     inquirer.prompt(questions)
+//     .then(function (userInput) {
+//         console.log(userInput)
+//         writeToFile("YourREADME.md", generateMarkdown(userInput));
+//     });
+// };
 
-// // // Function call to initialize app
+// // Function call to initialize app
 // init();
 
-// // // Function call to initialize app
-// init();
