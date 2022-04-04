@@ -1,7 +1,7 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
-// const fs = require('fs');
-// console.log(inquirer)
+const fs = require('fs');
+const generateMarkdown = require('./src/generateMarkdown.js');
 
 // Create an array of questions for user input
 const questions = () => {
@@ -133,11 +133,9 @@ const questions = () => {
 questions()
 
 
-// // TODO: Create a function to initialize app
+// // // TODO: Create a function to initialize app
 // function init() {}
 
-// // // Function call to initialize app
+// // // // Function call to initialize app
 // init();
 
-// // // Function call to initialize app
-// init();
