@@ -1,9 +1,9 @@
-//Include packages needed for this application
+// Global packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./src/generateMarkdown.js');
 
-// Create an array of questions for user input
+// An array of questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
@@ -130,12 +130,24 @@ const questions = () => {
         }
     ]);
 };
-questions()
 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+        throw err;
+        console.log('You have sucessfully transfered your data to the README.md file!');
+    });  
+};
 
-// // // TODO: Create a function to initialize app
-// function init() {}
+// A function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile('YourREADME.md', generateMarkdown(userInput));
+    });
+};
 
-// // // // Function call to initialize app
-// init();
+// Function call to initialize app
+ init();
 
