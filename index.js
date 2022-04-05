@@ -1,11 +1,10 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
-// const fs = require('fs'); // keep commented out until you write the fs functions
-// const generateMarkdown = require('./src/generateMarkdown.js')
+const fs = require('fs');
+const generateMarkdown = require('./src/generateMarkdown');
 
 // Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
         {
             type: 'input',
             name: 'title',
@@ -46,7 +45,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'Please explain how to use this application? (Required)',
             validate: usageInput => {
                 if (usageInput) {
@@ -128,27 +127,24 @@ const questions = () => {
                 }
             }
         }
-    ]);
+    ];
+
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            throw err;
+        console.log('Information was sucessfully transferred to YourREADME.md!')
+    });
 };
 
-questions();
-// function writeToFile(fileName, data) {
-//     FileSystem. writeFile(fileName, data, (err) => {
-//         if (err)
-//         throw err;
-//         console.log('You have sucessfully created a new README.md file!')
-//     });
-// };
+// Function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile("YourREADME.md", generateMarkdown(userInput));
+    });
+};
 
-// //  A function to initialize app
-// function init() {
-//     inquirer.prompt(questions)
-//     .then(function (userInput) {
-//         console.log(userInput)
-//         writeToFile("YourREADME.md", generateMarkdown(userInput));
-//     });
-// };
-
-// // Function call to initialize app
-// init();
-
+// Function call to initialize app
+init();
