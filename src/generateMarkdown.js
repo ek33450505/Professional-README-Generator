@@ -1,23 +1,24 @@
 function licenseBadge(data) {
   const licenseType = data.license[0];
-  let licenseString = ''
-  if (licenseType === "Apache License 2.0") {
-    licenseString = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
-  };
-  if (licenseType === "GNU General Public License 2.0") {
-    licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-  };
+  let licenseString = " "
+  // MIT is generating a badge
   if (licenseType === "MIT") {
     licenseString = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   };
-  if (licenseType === "Eclipse Public License") {
-    licenseString = `![License](https://img.shields.io/badge/License-Eclipse-Public-License-lightgreat.svg)`
+  // GNU 2.0 is not displaying on README 
+  if (licenseType === "GNU General Public License 2.0") {
+    licenseString = `![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-9cf.svg)`
   };
-  if (licenseType === "The Unlicense") {
-    licenseString = `![License](https://img.shields.io/badge/License-Unlicense-critical.svg)`
-  };
+  // Apache is not displaying on README  
+  if (licenseType === "Apache License 2.0") {
+     licenseString = `![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)`
+    };
+  // GNU 3.0 is not displaying on README 
+  if (licenseType === "GNU General Public License 3.0") {
+      licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-critical.svg)`
+    };
   return licenseString
-};
+  };
 
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
