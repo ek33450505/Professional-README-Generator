@@ -1,9 +1,9 @@
-# ejfef
+# Weather-Dashboard
   
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+  
 
   ## Description:
-  iejfiejfiejf
+  Weather-Dashboard
 
   ## Table of Contents
   - [Description](#description)
@@ -15,21 +15,21 @@
   - [Questions](#questions)
 
   ## Installation:
-  ijefiejfiejf
+  Weather-Dashboard
 
   ## Usage:
-  iojefipoejfe
+  Weather-Dashboard
 
   ## License:
-  Apache License 2.0
+  
 
   ## Contributing:
-  iojefijef
+  Weather-Dashboard
 
   ## Tests:
-  ioejfiejf 
+  Weather-Dashboard 
 
   ## Questions:
-  - GitHub Username: [ejfiejf](https://github.com/ejfiejf)
-  - Email: iejfiejf
-  - How to reach out with additional questions: undefined
+  - GitHub Username: [Weather-Dashboard](https://github.com/Weather-Dashboard)
+  - Email: Weather-Dashboard
+  - How to reach out with additional questions: Weather-Dashboard

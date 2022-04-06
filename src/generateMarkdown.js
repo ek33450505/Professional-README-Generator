@@ -4,6 +4,18 @@ function licenseBadge(data) {
   if (licenseType === "Apache License 2.0") {
     licenseString = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
   };
+  if (licenseType === "GNU General Public License 2.0") {
+    licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+  };
+  if (licenseType === "MIT") {
+    licenseString = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+  };
+  if (licenseType === "Eclipse Public License") {
+    licenseString = `![License](https://img.shields.io/badge/License-Eclipse-Public-License-lightgreat.svg)`
+  };
+  if (licenseType === "The Unlicense") {
+    licenseString = `![License](https://img.shields.io/badge/License-Unlicense-critical.svg)`
+  };
   return licenseString
 };
 
