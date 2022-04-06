@@ -59,7 +59,7 @@ const questions = [
             type: 'checkbox',
             name: 'license',
             message: 'Which lisences are attached to this project? (Check all that apply)',
-            choices: ['Apache License 2.0', 'GNU General Public License', 'Boost Software License 1.0', 'Eclipse Public License', 'The Unlicense']
+            choices: ['Apache License 2.0', 'GNU General Public License', 'Boost Software License 1.0', 'Eclipse Public License', 'MIT']
         },
         {
             type: 'input',
