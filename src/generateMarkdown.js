@@ -6,15 +6,15 @@ function licenseBadge(data) {
     licenseString = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   };
   // GNU 2.0 is not displaying on README 
-  if (licenseType === "GNU General Public License 2.0") {
+  if (licenseType === "GNU 2.0") {
     licenseString = `![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-9cf.svg)`
   };
   // Apache is not displaying on README  
-  if (licenseType === "Apache License 2.0") {
+  if (licenseType === "Apache 2.0") {
      licenseString = `![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)`
     };
   // GNU 3.0 is not displaying on README 
-  if (licenseType === "GNU General Public License 3.0") {
+  if (licenseType === "GNU 3.0") {
       licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-critical.svg)`
     };
   return licenseString

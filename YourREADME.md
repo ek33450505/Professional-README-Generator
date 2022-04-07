@@ -1,9 +1,9 @@
-# Professional-README-Generator
+# ijefijef
   
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-critical.svg)
 
   ## Description:
-  The README Generator is a server side application that utlizes node.js and the inquirer package to create easy README.md files for any application.
+  ikjefie
 
   ## Table of Contents
   - [Description](#description)
@@ -15,21 +15,21 @@
   - [Questions](#questions)
 
   ## Installation:
-  To install, please use git clone https://github.com/ek33450505/Professional-README-Generator.git 
+  ijefie
 
   ## Usage:
-  In order to use this project, please ensure you have node.js installed on your computer. After cloning from GitHub, open in VS Code and run node index.js in your command line, this will generate a series of prompts.
+  likjefe
 
   ## License:
-  MIT
+  GNU 3.0
 
   ## Contributing:
-  Please feel free to contribute to this project, I would love to see any additions you make to these files
+  ikjefkie
 
   ## Tests:
-  You must test this application using your command line. In order to see the generated README file, open YourREADME.md 
+  jefie 
 
   ## Questions:
-  - GitHub Username: [ek33450505](https://github.com/ek33450505)
-  - Email: ek33450505@gmail.com
-  - How to reach out with additional questions: Feel free to reachout to me on discord username: ed-kubiak
+  - GitHub Username: [ikjef](https://github.com/ikjef)
+  - Email: oikjef
+  - How to reach out with additional questions: undefined
