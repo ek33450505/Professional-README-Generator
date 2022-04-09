@@ -42,6 +42,8 @@ THEN I am taken to the corresponding section of the README
 
   https://drive.google.com/file/d/1_zx2GQ3ZfZ5SmtcKnETmzohbuNiGl6V2/preview
 
+  Sample YourREADME.md:
+
   ![Screenshot 2022-04-08 152546](https://user-images.githubusercontent.com/97137083/162510871-4cbbacd3-d78f-4778-a8ec-06e9cf1fd727.png)
  
   ## License:
