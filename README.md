@@ -23,9 +23,8 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
- 
 
-  ## Table of Contents
+ ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Visualization](#visualization)
@@ -37,14 +36,14 @@ THEN I am taken to the corresponding section of the README
   ## Installation: 
   To install this program please enter: (git clone https://github.com/ek33450505/Professional-README-Generator.git) in your computers terminal and open in your code editor. Please ensure you have Node.js installed on you computer of this repository will not work. To run the application you must also istall the Inquirer package from you command line by entering (npm install inquirer).
  
-
   ## Visualization:
 
- <iframe src="https://drive.google.com/file/d/1_zx2GQ3ZfZ5SmtcKnETmzohbuNiGl6V2/preview" width="640" height="480"></iframe>
+  Please use this link to view a video demonstration of the application working in my terminal:
+
+  https://drive.google.com/file/d/1_zx2GQ3ZfZ5SmtcKnETmzohbuNiGl6V2/preview
 
   ![Screenshot 2022-04-08 152546](https://user-images.githubusercontent.com/97137083/162510871-4cbbacd3-d78f-4778-a8ec-06e9cf1fd727.png)
  
-
   ## License:
   There is no license for this project, you are free to use or modify this application.
 
